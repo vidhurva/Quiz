@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Vidhur's Quiz</title>
+  </head>
+  <body>
+    <h1> 4) Press "Eat!" to finish the test and observe the Javascript changes! </h1>
+    <p id="message1"></p>
+    <button onclick="Empty()" id="end">Eat!</button>
+    <img id="myImg" src="full.jpg" width="250" height="200">
+    <button onclick="More()">More Ramen!</button>
+      <script>
+        function Empty() {
+          document.getElementById("myImg").src = "empty.jpg";
+          document.body.style.backgroundColor = "#f5c6ef";
+          message1.innerHTML = "Congratulations! You have successfully finished this quiz. Feel free to toggle the more ramen and eat buttons!";
+        }
+        function More() {
+          document.getElementById("myImg").src = "full.jpg";
+        }
+      </script>
+  </body>
+</html>
